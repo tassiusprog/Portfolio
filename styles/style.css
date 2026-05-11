@@ -39,11 +39,10 @@ body {
 }
 
 .apresentacao {
-    padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 82px;
+    padding: 5% 15%; /* Dá um espaçamento seguro nas laterais */
 }
 
 .apresentacao__conteudo {
@@ -77,7 +76,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 32px;
+    gap: 16px;
 }
 
 .apresentacao__links__subtitulo {
