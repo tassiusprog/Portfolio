@@ -42,7 +42,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5% 15%; /* Dá um espaçamento seguro nas laterais */
+    padding: 5% 15%;
 }
 
 .apresentacao__conteudo {
@@ -105,6 +105,21 @@ body {
     background-color: var(--cor-hover);
     color: var(--cor-primaria);
     transition: 0.3s;
+}
+
+.apresentacao__links__link {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid #22D4FD;
+    width: 280px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #F6F6F6;
 }
 
 .apresentacao__imagem {
