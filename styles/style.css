@@ -139,11 +139,13 @@ body {
 
 @media (max-width: 1200px) {
     .cabecalho {
-        padding: 10%;        
+        padding: 5% 0;
+        with: 100%;        
     }
 
     .cabecalho__menu {
         justify-content: center;
+        gap: 40px;
     }
 
     .apresentacao {
@@ -162,6 +164,33 @@ body {
     color: #22D4FD;
     margin-top: 32px;
     margin-bottom: 16px;
+}
+
+@media (max-width: 600px) {
+    .cabecalho__menu {
+        flex-direction: column; /* Empilha Home, Sobre mim e Currículo */
+        align-items: center;    /* Centraliza os links */
+        gap: 20px;              /* Espaçamento vertical confortável para o clique */
+    }
+
+    .cabecalho__menu__link {
+        font-size: 1.25rem;     /* Diminui levemente a fonte para não quebrar linhas */
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 1.8rem;      /* Ajusta o título principal para telas pequenas */
+        text-align: center;
+    }
+
+    .apresentacao__conteudo__texto {
+        font-size: 1.1rem;      /* Ajusta a leitura do texto no celular */
+        text-align: center;
+    }
+
+    .apresentacao__links__link {
+        width: 100%;            /* Faz os botões do portfólio se adaptarem à largura do celular */
+        max-width: 280px;
+    }
 }
 
     
