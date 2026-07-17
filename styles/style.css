@@ -140,7 +140,7 @@ body {
 @media (max-width: 1200px) {
     .cabecalho {
         padding: 5% 0;
-        with: 100%;        
+        width: 100%;      
     }
 
     .cabecalho__menu {
