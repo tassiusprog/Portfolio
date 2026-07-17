@@ -80,7 +80,7 @@ body {
 }
 
 .apresentacao__links__subtitulo {
-    font-size: 1.5r;
+    font-size: 1.5rem;
     font-family: var(--fonte-primaria);
     font-weight: 400;
 }
@@ -136,6 +136,81 @@ body {
     font-weight: 400;
 }
 
+/* Seção de Projetos Geral */
+.projetos {
+    padding: 5% 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.projetos__titulo {
+    font-family: var(--fonte-primaria);
+    font-size: 2.25rem;
+    color: var(--cor-secundaria);
+    text-align: center;
+}
+
+/* Container que segura os dois cards lado a lado */
+.projetos__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+/* Estilo Individual de cada Card */
+.projeto__card {
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 8px;
+    padding: 24px;
+    width: 45%; /* Faz os dois ocuparem quase metade da tela cada */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    background-color: transparent;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+/* Efeito de destaque ao passar o mouse */
+.projeto__card:hover {
+    transform: scale(1.02);
+    background-color: var(--cor-hover);
+}
+
+.projeto__card__titulo {
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    color: var(--cor-terciaria);
+}
+
+.projeto__card__texto {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.2rem;
+    color: var(--cor-secundaria);
+    line-height: 1.6;
+}
+
+/* Botão de Link interno do Card */
+.projeto__card__link {
+    display: block;
+    text-align: center;
+    border: 2px solid var(--cor-terciaria);
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    padding: 12px 0;
+    border-radius: 8px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.projeto__card__link:hover {
+    background-color: transparent;
+    color: var(--cor-terciaria);
+}
 
 @media (max-width: 1200px) {
     .cabecalho {
@@ -156,6 +231,21 @@ body {
     .apresentacao__conteudo {
         width: auto;
     }
+
+        .projetos {
+        padding: 8% 5%;
+    }
+
+    .projetos__container {
+        flex-direction: column; /* Empilha os cards no mobile */
+        align-items: center;
+    }
+
+    .projeto__card {
+        width: 100%; /* Faz o card ocupar a largura total disponível */
+        max-width: 500px; /* Evita que fique esticado demais em tablets */
+    }
+
 }
 
 .apresentacao__conteudo__titulo_sub {
